@@ -3,7 +3,11 @@ import Project from "./Project";
 
 export default function ProjectList({ projects }) {
   return (
-    <VStack divider={<StackDivider borderColor="white" />}>
+    <VStack
+      spacing="1rem"
+      divider={<StackDivider borderColor="white" />}
+      w="75%"
+    >
       {projects.map((p) => (
         <Project project={p} />
       ))}
