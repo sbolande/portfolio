@@ -11,7 +11,6 @@ import NotFound from "./pages/NotFound";
 function App() {
   return (
     <Fragment>
-      <head></head>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} exact />

@@ -1,5 +1,5 @@
 import NavLink from "../UI/NavLink";
-import { HStack, Link } from "@chakra-ui/react";
+import { HStack } from "@chakra-ui/react";
 
 export default function Navbar({ title }) {
   return (
