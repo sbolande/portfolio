@@ -1,15 +1,15 @@
-import { Box, Flex, Heading, Select, Spacer, VStack } from "@chakra-ui/react";
 import { useState } from "react";
+import { Box, Flex, Heading, Spacer, VStack } from "@chakra-ui/react";
+
 import ProjectList from "./ProjectList";
+import SkillFilter from "./SkillFilter";
+
 const projects = require("../../store/projects.json");
 
 export default function ProjectDisplay() {
-  // if this is the first time visiting the page, display default filter differently
-  const [firstRender, setFirstRender] = useState(true);
   const [displayProjects, setDisplayProjects] = useState(projects);
 
   const filterChangeHandler = (event) => {
-    if (firstRender) setFirstRender(false);
     const value = event.target.value;
     if (value === "all") {
       setDisplayProjects(projects);
@@ -29,19 +29,18 @@ export default function ProjectDisplay() {
           </Heading>
         </Box>
         <Spacer />
-        <Box>
-          <Select onChange={filterChangeHandler} bg="gray.800" color="white">
-            <option value="all">
-              {firstRender ? "Filter by Skills" : "All Skills"}
-            </option>
-            {projects
-              .flatMap((p) => p.skills.map((s) => s.tag))
-              .filter((val, i, self) => self.indexOf(val) === i)
-              .map((tag) => (
-                <option>{tag}</option>
-              ))}
-          </Select>
-        </Box>
+        <SkillFilter
+          onChange={filterChangeHandler}
+          skills={projects
+            .flatMap((p) => p.skills.map((s) => s.tag))
+            .filter(
+              (val, i, self) =>
+                self.indexOf(val) === i &&
+                val !== null &&
+                val !== "" &&
+                val !== undefined
+            )}
+        />
       </Flex>
       <ProjectList projects={displayProjects} />
     </VStack>
