@@ -5,36 +5,31 @@
     "imageUrl": null,
     "hours": "400+",
     "timeframe": "December 2019 - Present",
-    "description": "BYU-Idaho had need of an API wrapper library to the Canvas LMS to enable other IT projects to save development time on connecting to the LMS.\nThis project alone has saved hundreds of hours and is always improving the experience of BYU-Idaho IT personnel, students, and professors.\nCreated in C# using Newtonsoft and Refit for easy response serialization/deserialization.",
+    "description": "BYU-Idaho had need of an API wrapper library to the Canvas LMS to enable other IT projects to save development time on connecting to the LMS.<br/>This project alone has saved hundreds of hours and is always improving the experience of BYU-Idaho IT personnel, students, and professors.<br/>Created in C# using Newtonsoft and Refit for easy response serialization/deserialization.",
     "skills": [
       {
         "name": "Refit",
         "url": "https://reactiveui.github.io/refit/",
-        "iconUrl": "",
         "tag": "Refit"
       },
       {
         "name": "Json.NET (Newtonsoft)",
         "url": "https://www.newtonsoft.com/json",
-        "iconUrl": "",
         "tag": "Newtonsoft"
       },
       {
         "name": "C# 8.0",
         "url": null,
-        "iconUrl": "",
         "tag": "C#"
       },
       {
         "name": "xUnit",
         "url": "https://xunit.net/",
-        "iconUrl": "",
         "tag": "xUnit"
       },
       {
         "name": "CsvHelper",
         "url": "https://joshclose.github.io/CsvHelper/",
-        "iconUrl": "",
         "tag": "CsvHelper"
       }
     ]
@@ -50,31 +45,26 @@
       {
         "name": "Angular (TypeScript)",
         "url": "https://angular.io/",
-        "iconUrl": "",
         "tag": "Angular"
       },
       {
         "name": "C# 7.0",
-        "url": "",
-        "iconUrl": "",
+        "url": null,
         "tag": "C#"
       },
       {
         "name": "HTML",
-        "url": "",
-        "iconUrl": "",
+        "url": null,
         "tag": "HTML"
       },
       {
         "name": "SASS",
-        "url": "",
-        "iconUrl": "",
+        "url": null,
         "tag": "SASS"
       },
       {
         "name": "JavaScript",
-        "url": "",
-        "iconUrl": "",
+        "url": null,
         "tag": "JavaScript"
       }
     ]
@@ -90,25 +80,156 @@
       {
         "name": "React.js",
         "url": "https://reactjs.org/",
-        "iconUrl": "",
         "tag": "React"
       },
       {
         "name": "NodeJS",
-        "url": "",
-        "iconUrl": "",
+        "url": null,
         "tag": "Node"
       },
       {
         "name": "HTML",
-        "url": "",
-        "iconUrl": "",
+        "url": null,
         "tag": "HTML"
       },
       {
         "name": "CSS",
-        "url": "",
-        "iconUrl": "",
+        "url": null,
+        "tag": "CSS"
+      }
+    ]
+  },
+  {
+    "title": "Canvas Token Fetcher",
+    "url": "https://github.com/sbolande/canvas-token-fetcher#readme",
+    "imageUrl": "https://raw.githubusercontent.com/sbolande/canvas-token-fetcher/main/example.JPG",
+    "hours": "25",
+    "timeframe": "February 2021",
+    "description": "BYU-Idaho Hackathon Project Submission, Winter 2021. Allowed a developer to fetch a new API token from Canvas' admin login since students were not allowed Oauth. Powered by Electron, fetched by Puppeteer.<br />(React version currently under development)",
+    "skills": [
+      {
+        "name": "Puppeteer",
+        "url": "https://pptr.dev/",
+        "tag": "Puppeteer"
+      },
+      {
+        "name": "Electron",
+        "url": "https://www.electronjs.org/",
+        "tag": "Electron"
+      },
+      {
+        "name": "NodeJS",
+        "url": null,
+        "tag": "Node"
+      },
+      {
+        "name": "HTML",
+        "url": null,
+        "tag": "HTML"
+      },
+      {
+        "name": "CSS",
+        "url": null,
+        "tag": "CSS"
+      },
+      {
+        "name": "React.js",
+        "url": "https://reactjs.org/",
+        "tag": "React"
+      }
+    ]
+  },
+  {
+    "title": "D2L Gradebook CSV to Canvas Gradebook CSV",
+    "url": "https://github.com/sbolande/d2l-gradebook-csv-to-canvas-gradebook-csv#readme",
+    "imageUrl": null,
+    "hours": "30",
+    "timeframe": "May 2019",
+    "description": "A puppeteer project that transformed a gradebook CSV from one LMS (D2L) to another (Canvas) and then performed an automated upload. Migrated over 3,000 students' grades, saving the department hundreds of hours.<br />Work project for BYU-Idaho Student TechOps.",
+    "skills": [
+      {
+        "name": "Puppeteer",
+        "url": "https://pptr.dev/",
+        "tag": "Puppeteer"
+      },
+      {
+        "name": "d3-dsv",
+        "url": "https://www.npmjs.com/package/d3-dsv",
+        "tag": "Node"
+      },
+      {
+        "name": "canvas-api-wrapper",
+        "url": "https://www.npmjs.com/package/canvas-api-wrapper",
+        "tag": "Node"
+      },
+      {
+        "name": "sindresorhus p-map",
+        "url": "https://github.com/sindresorhus/p-map",
+        "tag": "Node"
+      },
+      {
+        "name": "NodeJS",
+        "url": null,
+        "tag": "Node"
+      }
+    ]
+  },
+  {
+    "title": "Student Software Engineering Training Projects",
+    "url": null,
+    "imageUrl": null,
+    "hours": "150",
+    "timeframe": "2020 - 2021",
+    "description": "Several training exercise projects that were developed to help new employees go from zero to proficient.<br/>Trainings include:<ul style=\"paddingLeft:1.35rem;\"><li>Git training to help an employee understand Azure, Git, and Visual Studio.</li><li>Async and Synchronous training to help an employee understand multithreading and timing.</li><li>LINQ training to help an employee understand NuGet, CSVs, lambdas, and LINQ.</li><li>C# Style training to help an employee understand XML comments, style, and good C# practices.</li><li>Agile training to help an employee understand Kanban and Agile practices.</li><li>Testing training to help an employee understand xUnit testing, integration testing, and end-to-end testing.</li></ul>",
+    "skills": [
+      {
+        "name": "C# 8.0",
+        "url": null,
+        "tag": "C#"
+      },
+      {
+        "name": "Project Management",
+        "url": null,
+        "tag": null
+      },
+      {
+        "name": "Training/Teaching",
+        "url": null,
+        "tag": null
+      }
+    ]
+  },
+  {
+    "title": "Magic: The Gathering Card Search - BYUI WDD313 Project",
+    "url": "https://sbolande.github.io/byui-wdd330/challenge02/index.html",
+    "imageUrl": "",
+    "hours": "10",
+    "timeframe": "December 2020",
+    "description": "A small school project that would help someone search for Magic: The Gathering cards.<br/>BYU-Idaho WDD313: Web Engineering II, Fall 2020. A web app using the mtgsdk API, ExpressJs, and Heroku.",
+    "skills": [
+      {
+        "name": "mtgsdk API",
+        "url": "https://magicthegathering.io/",
+        "tag": "Node"
+      },
+      {
+        "name": "Express.js",
+        "url": "https://express.js.com/",
+        "tag": "Express"
+      },
+      {
+        "name": "NodeJS",
+        "url": null,
+        "tag": "Node"
+      },
+      {
+        "name": "HTML",
+        "url": null,
+        "tag": "HTML"
+      },
+      {
+        "name": "CSS",
+        "url": null,
         "tag": "CSS"
       }
     ]
@@ -124,7 +245,7 @@
       {
         "name": "",
         "url": "",
-        "iconUrl": ""
+        "tag": ""
       }
     ]
   }

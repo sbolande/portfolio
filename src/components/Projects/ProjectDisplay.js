@@ -21,7 +21,13 @@ export default function ProjectDisplay() {
   };
 
   return (
-    <VStack spacing="2rem" bg="gray.800" color="white" cursor="default">
+    <VStack
+      spacing="2rem"
+      bg="gray.800"
+      color="white"
+      cursor="default"
+      marginBottom="2rem"
+    >
       <Flex align="stretch" w="90%">
         <Box>
           <Heading as="h1" size="xl" noOfLines="1">
@@ -31,15 +37,7 @@ export default function ProjectDisplay() {
         <Spacer />
         <SkillFilter
           onChange={filterChangeHandler}
-          skills={projects
-            .flatMap((p) => p.skills.map((s) => s.tag))
-            .filter(
-              (val, i, self) =>
-                self.indexOf(val) === i &&
-                val !== null &&
-                val !== "" &&
-                val !== undefined
-            )}
+          skills={projects.flatMap((p) => p.skills.map((s) => s.tag))}
         />
       </Flex>
       <ProjectList projects={displayProjects} />

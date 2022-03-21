@@ -1,14 +1,16 @@
 import {
-  Badge,
   Box,
   Container,
   Heading,
   HStack,
   Image,
   Link,
+  Tag,
   Text,
   VStack,
 } from "@chakra-ui/react";
+import SkillTag from "../UI/SkillTag";
+import parse from "html-react-parser";
 
 export default function Project({
   project,
@@ -47,19 +49,12 @@ export default function Project({
           </p>
         </Box>
         <Text padding="0.5rem" borderRadius="md" bg="gray.700">
-          {description}
+          {parse(description)}
         </Text>
         <HStack>
           {skills.map((s) => {
-            if (s.url)
-              return (
-                <Badge>
-                  <Link href={s.url} isExternal>
-                    {s.name}
-                  </Link>
-                </Badge>
-              );
-            else return <Badge>{s.name}</Badge>;
+            if (s.url) return <SkillTag name={s.name} url={s.url} />;
+            else return <Tag borderRadius="full">{s.name}</Tag>;
           })}
         </HStack>
       </VStack>

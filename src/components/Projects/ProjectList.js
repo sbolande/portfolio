@@ -8,9 +8,7 @@ export default function ProjectList({ projects }) {
       divider={<StackDivider borderColor="white" />}
       w="75%"
     >
-      {projects.map((p) => (
-        <Project project={p} />
-      ))}
+      {projects.map((p) => p.title && <Project project={p} />)}
     </VStack>
   );
 }
