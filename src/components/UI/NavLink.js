@@ -8,6 +8,7 @@ export default function NavLink(props) {
       color="cyan.300"
       _hover={{ textDecor: "none", color: "cyan.400" }}
       to={props.to}
+      isExternal={props.isExternal}
     >
       {props.children}
     </Link>

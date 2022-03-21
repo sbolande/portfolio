@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import Navbar from "./components/Layout/Navbar";
+import Footer from "./components/Layout/Footer";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
@@ -19,6 +20,7 @@ function App() {
         <Route path="/resume" element={<Resume />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </Fragment>
   );
 }

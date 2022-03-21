@@ -24,7 +24,7 @@ export default function ProjectDisplay() {
     <VStack spacing="2rem" bg="gray.800" color="white" cursor="default">
       <Flex align="stretch" w="90%">
         <Box>
-          <Heading as="h1" size="xl" noOfLines="1">
+          <Heading as="h1" size="xl" color="cyan.500" noOfLines="1">
             My Projects
           </Heading>
         </Box>
