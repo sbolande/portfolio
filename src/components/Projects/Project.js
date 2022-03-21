@@ -5,8 +5,6 @@ import {
   HStack,
   Image,
   Link,
-  Tag,
-  Text,
   VStack,
 } from "@chakra-ui/react";
 import SkillTag from "../UI/SkillTag";

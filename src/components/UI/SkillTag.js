@@ -1,4 +1,4 @@
-import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { FiExternalLink } from "react-icons/fi";
 import {
   Tag,
   Link,
@@ -31,7 +31,7 @@ export default function SkillTag({ name, url, icon, colorScheme, size }) {
       >
         {icon && <TagLeftIcon boxSize="11px" as={icon} />}
         <TagLabel>{name}</TagLabel>
-        {isLink && <TagRightIcon boxSize="11px" as={ExternalLinkIcon} />}
+        {isLink && <TagRightIcon boxSize="11px" as={FiExternalLink} />}
       </Tag>
     </Link>
   );

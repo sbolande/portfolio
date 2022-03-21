@@ -1,10 +1,10 @@
-import { Heading, Image, Text, VStack, Wrap, WrapItem } from "@chakra-ui/react";
+import { Heading, Image, Text, VStack, Wrap } from "@chakra-ui/react";
+import { BsStarFill } from "react-icons/bs";
 
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import ConsoleText from "../components/Home/ConsoleText";
 import Section from "../components/Home/Section";
 import SkillTag from "../components/UI/SkillTag";
-import { StarIcon } from "@chakra-ui/icons";
 
 const bio = require("../store/bio.json");
 
@@ -39,7 +39,7 @@ export default function Home() {
               key={`skilltag_${i}`}
               name={skill.tag}
               url={skill.url}
-              icon={skill.starred && StarIcon}
+              icon={skill.starred && BsStarFill}
               colorScheme="green"
             />
           ))}
@@ -48,7 +48,7 @@ export default function Home() {
               key={`skilltag_${i}`}
               name={skill.tag}
               url={skill.url}
-              icon={skill.starred && StarIcon}
+              icon={skill.starred && BsStarFill}
               colorScheme="blue"
             />
           ))}
@@ -57,7 +57,7 @@ export default function Home() {
               key={`skilltag_${i}`}
               name={skill.tag}
               url={skill.url}
-              icon={skill.starred && StarIcon}
+              icon={skill.starred && BsStarFill}
               colorScheme="yellow"
             />
           ))}
