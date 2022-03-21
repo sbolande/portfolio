@@ -1,7 +1,7 @@
 import NavLink from "../UI/NavLink";
 import { HStack } from "@chakra-ui/react";
 
-export default function Navbar({ title }) {
+export default function Navbar({ active }) {
   return (
     <HStack
       justify="center"

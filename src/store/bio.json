@@ -1,0 +1,89 @@
+{
+  "aboutMe": {
+    "text": [
+      "I'm Seth Bolander, a student, software engineer, project manager, and team lead for Brigham Young University - Idaho currently based in Rexburg, Idaho.",
+      "I am a jack-of-all-trades by nature of my position and have cultured many skills but have a passion for Agile Management, Backend Development, and Quality Assurance.",
+      "I'm origanally from Colorado and have a great love for puzzle solving, games, and movies."
+    ]
+  },
+  "skills": {
+    "primary": [
+      {
+        "tag": "C# 10 & .NET 6",
+        "url": null,
+        "starred": true
+      },
+      {
+        "tag": "ES 2018 & Node.js",
+        "url": null,
+        "starred": true
+      },
+      {
+        "tag": "Scrum",
+        "url": null,
+        "starred": true
+      },
+      {
+        "tag": "xUnit.net",
+        "url": "https://xunit.net/",
+        "starred": true
+      },
+      {
+        "tag": "React.js",
+        "url": "https://reactjs.org/"
+      },
+      {
+        "tag": "Azure DevOps",
+        "url": null
+      },
+      {
+        "tag": "Electron.js",
+        "url": "https://www.electronjs.org/"
+      },
+      {
+        "tag": "Puppeteer.js",
+        "url": "https://pptr.dev/"
+      },
+      {
+        "tag": "HTML, CSS, & SASS",
+        "url": null
+      }
+    ],
+    "secondary": [
+      {
+        "tag": "SQL & NoSQL",
+        "url": null
+      },
+      {
+        "tag": "ASP.NET",
+        "url": "https://dotnet.microsoft.com/en-us/apps/aspnet"
+      },
+      {
+        "tag": "Refit",
+        "url": "https://github.com/reactiveui/refit"
+      },
+      {
+        "tag": "Express.js",
+        "url": "https://expressjs.com/"
+      },
+      {
+        "tag": "Next.js",
+        "url": "https://nextjs.org/"
+      }
+    ],
+    "tertiary": [
+      {
+        "tag": "Angular",
+        "url": "https://angular.io/"
+      },
+      {
+        "tag": "Blazor & Razor",
+        "url": "https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor"
+      },
+      {
+        "tag": "Google Scripts",
+        "url": "https://www.google.com/script/start/"
+      }
+    ]
+  }
+}

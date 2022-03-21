@@ -1,24 +1,37 @@
-import { Tag, Link, TagLabel } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
+import {
+  Tag,
+  Link,
+  TagLabel,
+  TagLeftIcon,
+  TagRightIcon,
+} from "@chakra-ui/react";
 
-export default function SkillTag({ url, name, iconUrl, colorScheme, size }) {
+export default function SkillTag({ name, url, icon, colorScheme, size }) {
   const color = colorScheme ?? "blue";
+  const isLink = url ? true : false;
 
   return (
-    <Tag
-      size={size ?? "md"}
-      colorScheme={color}
-      _hover={{ bg: `${color}.200` }}
+    <Link
+      href={url}
+      _hover={{
+        textDecor: "none",
+      }}
+      cursor={isLink ? "pointer" : "default"}
+      isExternal={url ? true : false}
       borderRadius="full"
+      as={!isLink && "div"}
     >
-      <Link
-        href={url}
-        _hover={{
-          textDecor: "none",
-        }}
-        isExternal={url ? true : false}
+      <Tag
+        size={size ?? "md"}
+        colorScheme={color}
+        _hover={{ bg: isLink && `${color}.200` }}
+        borderRadius="full"
       >
+        {icon && <TagLeftIcon boxSize="11px" as={icon} />}
         <TagLabel>{name}</TagLabel>
-      </Link>
-    </Tag>
+        {isLink && <TagRightIcon boxSize="11px" as={ExternalLinkIcon} />}
+      </Tag>
+    </Link>
   );
 }

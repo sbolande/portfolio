@@ -202,7 +202,7 @@
   {
     "title": "Magic: The Gathering Card Search - BYUI WDD313 Project",
     "url": "https://sbolande.github.io/byui-wdd330/challenge02/index.html",
-    "imageUrl": "",
+    "imageUrl": null,
     "hours": "10",
     "timeframe": "December 2020",
     "description": "A small school project that would help someone search for Magic: The Gathering cards.<br/>BYU-Idaho WDD313: Web Engineering II, Fall 2020. A web app using the mtgsdk API, ExpressJs, and Heroku.",

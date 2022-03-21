@@ -1,12 +1,18 @@
-import { Heading, Image, VStack } from "@chakra-ui/react";
-import ConsoleText from "../components/Home/ConsoleText";
+import { Heading, Image, Text, VStack, Wrap, WrapItem } from "@chakra-ui/react";
+
 import useDocumentTitle from "../hooks/useDocumentTitle";
+import ConsoleText from "../components/Home/ConsoleText";
+import Section from "../components/Home/Section";
+import SkillTag from "../components/UI/SkillTag";
+import { StarIcon } from "@chakra-ui/icons";
+
+const bio = require("../store/bio.json");
 
 export default function Home() {
   useDocumentTitle();
 
   return (
-    <VStack spacing="2rem">
+    <VStack spacing="2rem" align="stretch">
       <Heading as="h1" size="2xl" w="100%" textAlign="center" cursor="default">
         <ConsoleText color="cyan.500" cursorColor="cyan.700">
           Seth Bolander
@@ -19,7 +25,44 @@ export default function Home() {
         alt="@sbolande"
         border="3px solid"
         borderColor="cyan.600"
+        alignSelf="center"
       />
+      <Section header="About Me">
+        {bio.aboutMe.text.map((paragraph, i) => (
+          <Text key={`aboutMe_para_${i}`}>{paragraph}</Text>
+        ))}
+      </Section>
+      <Section header="Skills & Technologies">
+        <Wrap spacing="0.8rem" shouldWrapChildren>
+          {bio.skills.primary.map((skill, i) => (
+            <SkillTag
+              key={`skilltag_${i}`}
+              name={skill.tag}
+              url={skill.url}
+              icon={skill.starred && StarIcon}
+              colorScheme="green"
+            />
+          ))}
+          {bio.skills.secondary.map((skill, i) => (
+            <SkillTag
+              key={`skilltag_${i}`}
+              name={skill.tag}
+              url={skill.url}
+              icon={skill.starred && StarIcon}
+              colorScheme="blue"
+            />
+          ))}
+          {bio.skills.tertiary.map((skill, i) => (
+            <SkillTag
+              key={`skilltag_${i}`}
+              name={skill.tag}
+              url={skill.url}
+              icon={skill.starred && StarIcon}
+              colorScheme="yellow"
+            />
+          ))}
+        </Wrap>
+      </Section>
     </VStack>
   );
 }

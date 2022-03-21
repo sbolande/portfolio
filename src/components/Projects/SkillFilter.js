@@ -30,11 +30,13 @@ export default function SkillFilter(props) {
         color="cyan.500"
         w="150px"
       >
-        <option style={{ background: "#2D3748" }} value="all">
+        <option key="all" style={{ background: "#2D3748" }} value="all">
           {firstRender ? "Filter by Skills" : "All Skills"}
         </option>
-        {skills.map((tag) => (
-          <option style={{ background: "#2D3748" }}>{tag}</option>
+        {skills.map((tag, i) => (
+          <option key={`skillFilterOpt_${i}`} style={{ background: "#2D3748" }}>
+            {tag}
+          </option>
         ))}
       </Select>
     </Box>

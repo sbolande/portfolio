@@ -14,7 +14,7 @@ import parse from "html-react-parser";
 
 export default function Project({
   project,
-  project: { title, url, imageUrl, hours, timeframe, description, skills },
+  project: { title, url, imageUrl, hours, timeframe, description, skills, key },
 }) {
   return (
     <HStack spacing="1rem">
@@ -48,13 +48,28 @@ export default function Project({
             {timeframe}
           </p>
         </Box>
-        <Text padding="0.5rem" borderRadius="md" bg="gray.700">
+        <Box padding="0.5rem" borderRadius="md" bg="gray.700">
           {parse(description)}
-        </Text>
+        </Box>
         <HStack>
-          {skills.map((s) => {
-            if (s.url) return <SkillTag name={s.name} url={s.url} />;
-            else return <Tag borderRadius="full">{s.name}</Tag>;
+          {skills.map((s, i) => {
+            if (s.url) {
+              return (
+                <SkillTag
+                  key={`${key}_skilltag_${i}`}
+                  name={s.name}
+                  url={s.url}
+                />
+              );
+            } else {
+              return (
+                <SkillTag
+                  key={`${key}_skilltag_${i}`}
+                  name={s.name}
+                  colorScheme="gray"
+                />
+              );
+            }
           })}
         </HStack>
       </VStack>

@@ -8,7 +8,10 @@ export default function ProjectList({ projects }) {
       divider={<StackDivider borderColor="white" />}
       w="75%"
     >
-      {projects.map((p) => p.title && <Project project={p} />)}
+      {projects.map((p, i) => {
+        let key = `project_${i}`;
+        return p.title && <Project key={key} project={{ key, ...p }} />;
+      })}
     </VStack>
   );
 }
