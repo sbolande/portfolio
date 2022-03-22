@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { Route, Routes } from "react-router-dom";
+import { Box } from "@chakra-ui/react";
 
 import Navbar from "./components/Layout/Navbar";
 import Footer from "./components/Layout/Footer";
@@ -20,6 +21,7 @@ function App() {
         <Route path="/resume" element={<Resume />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Box h="2rem" />
       <Footer />
     </Fragment>
   );
