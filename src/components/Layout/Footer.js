@@ -1,4 +1,4 @@
-import { Box, HStack, Text } from "@chakra-ui/react";
+import { Box, HStack } from "@chakra-ui/react";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { DiCodepen } from "react-icons/di";
 import { AiFillGoogleSquare } from "react-icons/ai";
@@ -23,32 +23,24 @@ export default function Navbar() {
         w="100%"
       >
         <NavLink
+          name="LinkedIn"
           to="https://www.linkedin.com/in/seth-bolander-07577a179/"
+          icon={<BsLinkedin />}
           isExternal
-        >
-          <HStack spacing="3px">
-            <BsLinkedin />
-            <Text>LinkedIn</Text>
-          </HStack>
-        </NavLink>
-        <NavLink to="https://github.com/sbolande" isExternal>
-          <HStack spacing="3px">
-            <BsGithub />
-            <Text>GitHub</Text>
-          </HStack>
-        </NavLink>
-        <NavLink to="mailto:sbolande97@gmail.com" isExternal>
-          <HStack spacing="3px">
-            <AiFillGoogleSquare />
-            <Text>Gmail</Text>
-          </HStack>
-        </NavLink>
-        <NavLink to="https://codepen.io/sbolande" isExternal>
-          <HStack spacing="2px">
-            <DiCodepen />
-            <Text>CodePen</Text>
-          </HStack>
-        </NavLink>
+        />
+        <NavLink
+          name="GitHub"
+          to="https://github.com/sbolande"
+          icon={<BsGithub />}
+          isExternal
+        />
+        <NavLink name="Gmail" to="/contact" icon={<AiFillGoogleSquare />} />
+        <NavLink
+          name="CodePen"
+          to="https://codepen.io/sbolande"
+          icon={<DiCodepen />}
+          isExternal
+        />
       </HStack>
     </Fragment>
   );

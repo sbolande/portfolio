@@ -18,7 +18,7 @@ export default function SkillTag({ name, url, icon, colorScheme, size }) {
         textDecor: "none",
       }}
       cursor={isLink ? "pointer" : "default"}
-      isExternal={url ? true : false}
+      isExternal={isLink ? true : false}
       borderRadius="full"
       as={!isLink && "div"}
       shadow="3px 3px 0.4rem #101010"

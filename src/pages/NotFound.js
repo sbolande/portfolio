@@ -10,7 +10,7 @@ export default function NotFound() {
       <Heading size="3xl" as="h1" padding="1rem">
         404 - Not Found!
       </Heading>
-      <NavLink to="/">Go to Home</NavLink>
+      <NavLink name="Go to Home" to="/" />
     </Container>
   );
 }
