@@ -1,6 +1,7 @@
 import {
   chakra,
   theme,
+  useToast,
   Button,
   FormControl,
   FormLabel,
@@ -14,8 +15,21 @@ import { HiAtSymbol, HiOutlineUser } from "react-icons/hi";
 import { BiPaperPlane, BiBuildings } from "react-icons/bi";
 
 export default function ContactForm() {
+  const toast = useToast();
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    toast({
+      title: "Message Sent!",
+      description: "I'll get back to you as soon as I can!",
+      status: "success",
+      position: "bottom",
+      containerStyle: {
+        marginBottom: "4rem",
+      },
+      duration: 9000,
+      isClosable: true,
+    });
   };
 
   return (
@@ -70,7 +84,6 @@ export default function ContactForm() {
               id="org"
               placeholder="Company / Organization / Group"
               focusBorderColor="cyan.400"
-              required
             />
           </InputGroup>
         </FormControl>
@@ -88,6 +101,7 @@ export default function ContactForm() {
         <Button
           variant="outline"
           colorScheme="cyan"
+          type="submit"
           _hover={{ bg: "cyan.400", color: "cyan.800" }}
           leftIcon={<BiPaperPlane />}
         >
