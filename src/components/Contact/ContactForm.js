@@ -1,17 +1,5 @@
 import { useState, useRef } from "react";
-import {
-  chakra,
-  theme,
-  useToast,
-  Button,
-  FormControl,
-  FormLabel,
-  Input,
-  InputGroup,
-  InputLeftElement,
-  VStack,
-  Textarea,
-} from "@chakra-ui/react";
+import { chakra, theme, useToast, Button, VStack } from "@chakra-ui/react";
 import { HiAtSymbol, HiOutlineUser } from "react-icons/hi";
 import { BiPaperPlane, BiBuildings, BiCheck } from "react-icons/bi";
 
