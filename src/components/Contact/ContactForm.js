@@ -16,6 +16,7 @@ import { HiAtSymbol, HiOutlineUser } from "react-icons/hi";
 import { BiPaperPlane, BiBuildings, BiCheck } from "react-icons/bi";
 
 import emailjs from "@emailjs/browser";
+import { ContactInput, ContactTextarea } from "./ContactInput";
 // Set Environment variables
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
 const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
@@ -96,69 +97,34 @@ export default function ContactForm() {
       onSubmit={sendEmail}
     >
       <VStack spacing="1rem">
-        <FormControl isRequired>
-          <FormLabel htmlFor="email" color="cyan.300">
-            Email Address
-          </FormLabel>
-          <InputGroup>
-            <InputLeftElement
-              pointerEvents="none"
-              children={<HiAtSymbol color={theme.colors.cyan["400"]} />}
-            />
-            <Input
-              name="email"
-              type="email"
-              placeholder="johndoe@example.com"
-              focusBorderColor="cyan.400"
-              required
-              autoFocus
-            />
-          </InputGroup>
-        </FormControl>
-        <FormControl isRequired>
-          <FormLabel htmlFor="name" color="cyan.300">
-            Name
-          </FormLabel>
-          <InputGroup>
-            <InputLeftElement
-              pointerEvents="none"
-              children={<HiOutlineUser color={theme.colors.cyan["400"]} />}
-            />
-            <Input
-              name="name"
-              placeholder="John Doe"
-              focusBorderColor="cyan.400"
-              required
-            />
-          </InputGroup>
-        </FormControl>
-        <FormControl>
-          <FormLabel htmlFor="company" color="cyan.300">
-            Company
-          </FormLabel>
-          <InputGroup>
-            <InputLeftElement
-              pointerEvents="none"
-              children={<BiBuildings color={theme.colors.cyan["400"]} />}
-            />
-            <Input
-              name="company"
-              placeholder="Company / Organization / Group"
-              focusBorderColor="cyan.400"
-            />
-          </InputGroup>
-        </FormControl>
-        <FormControl isRequired>
-          <FormLabel htmlFor="message" color="cyan.300">
-            Message
-          </FormLabel>
-          <Textarea
-            name="message"
-            placeholder="..."
-            focusBorderColor="cyan.400"
-            required
-          />
-        </FormControl>
+        <ContactInput
+          name="email"
+          label="Email Address"
+          type="email"
+          placeholder="johndoe@example.com"
+          symbol={<HiAtSymbol color={theme.colors.cyan["400"]} />}
+          required
+          autoFocus
+        />
+        <ContactInput
+          name="name"
+          label="Name"
+          placeholder="John Doe"
+          symbol={<HiOutlineUser color={theme.colors.cyan["400"]} />}
+          required
+        />
+        <ContactInput
+          name="company"
+          label="Company"
+          placeholder="Company / Organization / Group"
+          symbol={<BiBuildings color={theme.colors.cyan["400"]} />}
+        />
+        <ContactTextarea
+          name="message"
+          label="Message"
+          placeholder="..."
+          required
+        />
         <Button
           variant="outline"
           colorScheme="cyan"
