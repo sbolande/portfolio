@@ -1,3 +1,8 @@
+html {
+  overflow-y: scroll;
+  overflow-y: overlay;
+}
+
 #root {
   min-height: 100vh;
 }
@@ -11,7 +16,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  width: 8px;
+  background-color: #2d3748;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #a0aec0;
+  border-radius: 4px;
 }
