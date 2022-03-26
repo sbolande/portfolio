@@ -10,12 +10,12 @@
       {
         "name": "Refit",
         "url": "https://reactiveui.github.io/refit/",
-        "tag": "Refit"
+        "tag": "C#"
       },
       {
         "name": "Json.NET (Newtonsoft)",
         "url": "https://www.newtonsoft.com/json",
-        "tag": "Newtonsoft"
+        "tag": "C#"
       },
       {
         "name": "C# 8.0",
@@ -25,12 +25,42 @@
       {
         "name": "xUnit",
         "url": "https://xunit.net/",
-        "tag": "xUnit"
+        "tag": "C#"
       },
       {
         "name": "CsvHelper",
         "url": "https://joshclose.github.io/CsvHelper/",
-        "tag": "CsvHelper"
+        "tag": "Node"
+      }
+    ]
+  },
+  {
+    "title": "My Portfolio",
+    "url": null,
+    "imageUrl": null,
+    "hours": "30",
+    "timeframe": "March 2022",
+    "description": "A React.js + Chakra UI project to display my projects, bio, and a contact form powered by EmailJS.",
+    "skills": [
+      {
+        "name": "React.js",
+        "url": "https://reactjs.org/",
+        "tag": "React"
+      },
+      {
+        "name": "Chakra UI",
+        "url": "https://chakra-ui.com/",
+        "tag": "React"
+      },
+      {
+        "name": "EmailJS",
+        "url": "https://www.emailjs.com/",
+        "tag": "Node"
+      },
+      {
+        "name": "NodeJS",
+        "url": null,
+        "tag": "Node"
       }
     ]
   },
@@ -231,21 +261,6 @@
         "name": "CSS",
         "url": null,
         "tag": "CSS"
-      }
-    ]
-  },
-  {
-    "title": "",
-    "url": "",
-    "imageUrl": "",
-    "hours": "",
-    "timeframe": "",
-    "description": "",
-    "skills": [
-      {
-        "name": "",
-        "url": "",
-        "tag": ""
       }
     ]
   }
