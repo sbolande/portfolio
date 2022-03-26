@@ -4,7 +4,7 @@ import { HiAtSymbol, HiOutlineUser } from "react-icons/hi";
 import { BiPaperPlane, BiBuildings, BiCheck } from "react-icons/bi";
 
 import emailjs from "@emailjs/browser";
-import { ContactInput, ContactTextarea } from "./ContactInput";
+import { ContactCheckbox, ContactInput, ContactTextarea } from "./ContactInput";
 // Set Environment variables
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
 const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
@@ -112,6 +112,11 @@ export default function ContactForm() {
           label="Message"
           placeholder="..."
           required
+        />
+        <ContactCheckbox
+          name="include_resume"
+          label="I would like your resume"
+          align="start"
         />
         <Button
           variant="outline"

@@ -1,4 +1,5 @@
 import {
+  Checkbox,
   FormControl,
   FormLabel,
   Input,
@@ -27,6 +28,23 @@ export function ContactTextarea({
         autoFocus={autoFocus}
       />
     </FormControl>
+  );
+}
+
+export function ContactCheckbox({ name, label, symbol, align }) {
+  const padding = align === "start" || align === "end" ? "0 0.3rem" : "0";
+
+  return (
+    <Checkbox
+      name={name}
+      icon={symbol}
+      colorScheme="cyan"
+      alignSelf={align}
+      padding={padding}
+      value={"Yes"}
+    >
+      {label}
+    </Checkbox>
   );
 }
 

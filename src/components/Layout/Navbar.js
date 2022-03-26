@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <HStack
       justify="center"
-      spacing="2rem"
+      spacing="3rem"
       bg="gray.700"
       fontSize="1.15rem"
       marginBottom="1rem"
@@ -25,7 +25,6 @@ export default function Navbar() {
         to="/contact"
         isActive={location === "/contact"}
       />
-      <NavLink name="Resume" to="/resume" isActive={location === "/resume"} />
     </HStack>
   );
 }
