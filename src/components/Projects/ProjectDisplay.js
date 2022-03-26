@@ -4,7 +4,7 @@ import { Box, Flex, Heading, Spacer, VStack } from "@chakra-ui/react";
 import ProjectList from "./ProjectList";
 import SkillFilter from "./SkillFilter";
 
-const projects = require("../../store/projects.json");
+const projects = require("../../assets/projects.json");
 
 export default function ProjectDisplay() {
   const [displayProjects, setDisplayProjects] = useState(projects);

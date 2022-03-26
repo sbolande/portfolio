@@ -5,7 +5,7 @@ import { BsStarFill } from "react-icons/bs";
 import SkillTag from "../UI/SkillTag";
 import Section from "./Section";
 
-const bio = require("../../store/bio.json");
+const bio = require("../../assets/bio.json");
 
 export default function BioDisplay() {
   return (
