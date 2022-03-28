@@ -21,15 +21,10 @@ export default function Project({
 
   return (
     <HStack spacing="1rem" align="center">
-      {hasImage && !isSmallScreen && (
-        <Container w="28%" maxH="200px" bg="gray.700" centerContent>
-          <Image maxH="200px" fit="contain" src={imageUrl} alt={title} />
-        </Container>
-      )}
       <VStack
         align="flex-start"
         spacing="0.7rem"
-        w={!hasImage || isSmallScreen ? "100%" : "72%"}
+        w={!isSmallScreen ? "72%" : "100%"}
       >
         <Box textAlign="left">
           <Heading as="h2" size="lg" textAlign="left">
@@ -46,7 +41,7 @@ export default function Project({
             {timeframe}
           </p>
         </Box>
-        <Box padding="0.5rem" borderRadius="md" bg="gray.700">
+        <Box padding="0.5rem" borderRadius="md" bg="gray.700" w="100%">
           {parse(description)}
         </Box>
         <Wrap>
@@ -71,6 +66,18 @@ export default function Project({
           })}
         </Wrap>
       </VStack>
+      {!isSmallScreen && (
+        <Container
+          w="28%"
+          maxH="200px"
+          bg={hasImage && "gray.700"}
+          centerContent
+        >
+          {hasImage && (
+            <Image maxH="200px" fit="contain" src={imageUrl} alt={title} />
+          )}
+        </Container>
+      )}
     </HStack>
   );
 }
