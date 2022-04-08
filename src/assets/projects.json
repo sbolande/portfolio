@@ -131,11 +131,11 @@
   },
   {
     "title": "Canvas Token Fetcher",
-    "url": "https://github.com/sbolande/canvas-token-fetcher#readme",
+    "url": "https://github.com/sbolande/canvas-token-fetcher-react#readme",
     "imageUrl": "https://raw.githubusercontent.com/sbolande/canvas-token-fetcher/main/example.JPG",
     "hours": "25",
     "timeframe": "February 2021",
-    "description": "BYU-Idaho Hackathon Project Submission, Winter 2021. Allowed a developer to fetch a new API token from Canvas' admin login since students were not allowed Oauth. Powered by Electron, fetched by Puppeteer.<br />(React version currently under development)",
+    "description": "Originally BYU-Idaho Hackathon Project Submission, Winter 2021. Allowed a developer to fetch a new API token from Canvas' admin login since students were not allowed Oauth. Powered by Electron Forge, fetched by Puppeteer, now with React!",
     "skills": [
       {
         "name": "Puppeteer",
@@ -143,9 +143,19 @@
         "tag": "Puppeteer"
       },
       {
+        "name": "Electron Forge",
+        "url": "https://www.electronforge.io/",
+        "tag": "Electron"
+      },
+      {
         "name": "Electron",
         "url": "https://www.electronjs.org/",
         "tag": "Electron"
+      },
+      {
+        "name": "React.js",
+        "url": "https://reactjs.org/",
+        "tag": "React"
       },
       {
         "name": "NodeJS",
@@ -161,11 +171,6 @@
         "name": "CSS",
         "url": null,
         "tag": "CSS"
-      },
-      {
-        "name": "React.js",
-        "url": "https://reactjs.org/",
-        "tag": "React"
       }
     ]
   },
