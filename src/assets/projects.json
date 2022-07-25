@@ -100,6 +100,41 @@
     ]
   },
   {
+    "title": "\"Bolander Bakes\" Recipe Website",
+    "url": "https://bolander-bakes.vercel.app/",
+    "imageUrl": null,
+    "hours": "40+",
+    "timeframe": "May - July 2022",
+    "description": "A recipe website to learn Next.js and MongoDB. Powered by React and Chakra UI.",
+    "skills": [
+      {
+        "name": "React.js",
+        "url": "https://reactjs.org/",
+        "tag": "React"
+      },
+      {
+        "name": "Next.js",
+        "url": "https://nextjs.org/",
+        "tag": "Next"
+      },
+      {
+        "name": "MongoDB",
+        "url": "https://www.mongodb.com/cloud/atlas/efficiency",
+        "tag": "Mongo"
+      },
+      {
+        "name": "Chakra UI",
+        "url": "https://chakra-ui.com/",
+        "tag": "React"
+      },
+      {
+        "name": "NodeJS",
+        "url": null,
+        "tag": "Node"
+      }
+    ]
+  },
+  {
     "title": "Pokemon Type Calculator - React Trial",
     "url": "https://sbolande.github.io/pokemon-type-calculator/",
     "imageUrl": "https://raw.githubusercontent.com/sbolande/pokemon-type-calculator/main/example.PNG",
@@ -214,7 +249,7 @@
     "url": null,
     "imageUrl": null,
     "hours": "150",
-    "timeframe": "2020 - 2021",
+    "timeframe": "2020 - 2022",
     "description": "Several training exercise projects that were developed to help new employees go from zero to proficient.<br/>Trainings include:<ul style=\"paddingLeft:1.35rem;\"><li>Git training to help an employee understand Azure, Git, and Visual Studio.</li><li>Async and Synchronous training to help an employee understand multithreading and timing.</li><li>LINQ training to help an employee understand NuGet, CSVs, lambdas, and LINQ.</li><li>C# Style training to help an employee understand XML comments, style, and good C# practices.</li><li>Agile training to help an employee understand Kanban and Agile practices.</li><li>Testing training to help an employee understand xUnit testing, integration testing, and end-to-end testing.</li></ul>",
     "skills": [
       {
